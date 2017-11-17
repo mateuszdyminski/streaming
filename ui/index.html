@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+    <link rel="stylesheet" href="node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="styles/all.css">
+
+    <!-- Dependencies -->
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/moment/min/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="node_modules/video.js/dist/video.min.js"></script>
+
+    <!-- Angular start script -->
+    <script src="app/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/controllers/video.js"></script>
+    <script src="app/controllers/menu.js"></script>
+
+    <!-- Services -->
+    <script src="app/services/video-srv.js"></script>
+</head>
+    <body id="ng-app" ng-app="Streaming">
+
+        <nav class="navbar navbar-default" ng-controller="MenuCtrl">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">Video</a>
+                </div>
+                <div class="collapse navbar-collapse hidden-xs" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/search" class="inactive-link">Video</a></li>
+                        <li class="dropdown">
+                            <a href="#/" class="dropdown-toggle inactive-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img src="/img/Icon-menu.svg"/>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+	    <div id="content" ng-view></div>
+	</body>
+</html>

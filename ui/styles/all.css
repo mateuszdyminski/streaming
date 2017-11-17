@@ -1,0 +1,181 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background: #000;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 100px;
+}
+.navbar {
+  min-height: 70px;
+  background-color: #000;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-default {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ffffff;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #0fef00;
+}
+.navbar-default .navbar-brand {
+  padding: 20px 30px;
+  line-height: 25px;
+  color: #0fef00;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #0fef00;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.navbar-nav > li > a {
+  padding-top: 23px;
+}
+.hamburger {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  fill: #0fef00;
+  width: 25px;
+  height: 25px;
+  margin-top: -3px;
+}
+.btn-primary {
+  background-color: #0fef00;
+  border-color: #0fef00;
+}
+.container {
+  margin-top: 5px;
+}
+.results {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.query {
+  max-width: 1250px;
+  margin: 0 auto;
+  position: relative;
+}
+.query label {
+  font-size: 2.3rem;
+  padding-bottom: 10px;
+  display: block;
+  position: static;
+}
+.query span#upper-label {
+  display: inline;
+}
+.query span#left-label {
+  display: none;
+}
+.query input,
+.query button {
+  vertical-align: middle;
+}
+.query input {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 25px;
+  color: #747678;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #999999;
+  padding: 10px 10px;
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.query .search-query {
+  width: 380px;
+}
+.query .keywords {
+  width: 580px;
+}
+.query .form-control {
+  color: #747678;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 25px;
+  height: 46px;
+  border-radius: 0;
+  width: 140px;
+}
+.bootstrap-datetimepicker-widget table td {
+  color: #747678;
+}
+.query .left {
+  float: left;
+  margin-right: 10px;
+}
+.query .input-group {
+  width: 220px;
+}
+.query .input-group input {
+  width: 200px;
+}
+.query input:focus {
+  outline: none;
+  border-color: #0fef00;
+}
+.query button {
+  line-height: 22px;
+  margin: 0;
+  padding: 10px 30px;
+  font-weight: 300;
+  border-radius: 0;
+}
+
+.host_col {
+  width: 100px;
+}
+.time_col {
+  width: 250px;
+}
+.level_col {
+  width: 80px;
+}
+.msg_col {
+  width: 710px;
+}
+.user_col {
+  width: 100px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.warning { color: #ff9a03; }
+.info { color: #fff; }
+.error { color: #ff6b00; }
+.debug { color: #97ff00; }
+.fatal { color: #ff0000; }
+
+@media (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+}
+
+.highlight {
+  color: #0fef00;
+}
+
+.datetime {
+  color: #acc4c3;
+}
+
+.node-id {
+  color: #b7e5e3;
+}

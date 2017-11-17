@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: streaming-limits
+  namespace: streaming
+spec:
+  hard:
+    cpu: "1"
+    memory: 3Gi
+    resourcequotas: "1"

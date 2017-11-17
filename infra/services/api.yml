@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: streaming-api
+  namespace: streaming
+  labels:
+    app: streaming-api
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+  selector:
+    app: streaming-api

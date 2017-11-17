@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres:10.0
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: pass123
+      POSTGRES_USER: str-user
+      POSTGRES_DB: str-db
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+
+  streaming-server:
+    build: .
+    ports:
+        - "8080:8080"

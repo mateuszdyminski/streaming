@@ -1,0 +1,5 @@
+Host = ":8001"
+HttpDrainInterval = "1s"
+StaticsPath = "ui"
+VideosPath = "data/videos"
+PostersPath = "data/posters"
