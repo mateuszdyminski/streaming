@@ -18,3 +18,7 @@
 
 # Node packages
 ui/node_modules
+ui/yarn.lock
+
+# Build dir
+build

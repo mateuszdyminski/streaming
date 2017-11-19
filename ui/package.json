@@ -1,0 +1,19 @@
+{
+  "name": "Streaming",
+  "version": "1.0.0",
+  "description": "Dead simple streaming platform",
+  "main": "index.js",
+  "repository": "https://github.com/mateuszdyminski/streaming",
+  "author": "Mateusz Dymiński",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-animate": "1.6.1",
+    "angular-route": "1.6.1",
+    "angular-ui-bootstrap": "2.5.0",
+    "bootstrap": "3.3.7",
+    "jquery": "3.2.1",
+    "moment": "^2.19.1",
+    "video.js": "6.2.8"
+  }
+}
